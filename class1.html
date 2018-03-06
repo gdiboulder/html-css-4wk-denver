@@ -6,8 +6,8 @@
 
     <title>Girl Develop It - Intro to HTML + CSS, Class 1</title>
 
-    <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Liz Shaw">
-    <meta name="author" content="Liz Shaw">
+    <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Cara Jo">
+    <meta name="author" content="Cara Jo">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -18,7 +18,7 @@
     <!-- For syntax highlighting -->
     <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
     <!-- dark editor-->
-    <link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/light.css">
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
     <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
@@ -49,14 +49,14 @@
         <div class="slides">
             <!-- Code Your Own Website -->
             <section>
-                <h2>Code Your Own Website</h2>
+                <h2>HTML / CSS 4wk series</h2>
                 <img src="img/circle-gdi-logo.png" alt="GDI Logo" />
-                <h3>Intro to HTML + CSS</h3>
+                <h3>Intro to HTML</h3>
                 <p>
-                    <small>Class 1</small>
+                    <small>Session 1</small>
                 </p>
             </section>
-			
+
             <!-- Welcome! -->
             <section class="hide-pdf">
                 <h2>Welcome!</h2>
@@ -70,24 +70,26 @@
                     <li>Have fun</li>
                 </ul>
             </section>
-			
+
 			<!-- First Things First -->
             <section class="hide-pdf">
                 <h2>First Things First</h2>
-                <p class="blue">Tell us about yourself.</p>
+                <p class="blue">Meet your team!</p>
                 <ul>
-                    <li>Who are you?</li>
-                    <li>What do you hope to get out of the class?</li>
-                    <li>What's your spirit animal?</li>
+                    <li><b>Cara Jo:</b> Instrutor & Organizer</li>
+                    <li><b>Kathryn:</b> Instrutor & Organizer</li>
+                    <li><b>Ashlee:</b> Teaching Assistant & Organizer</li>
+                    <li><b>Dash:</b> Teaching Assistant & Organizer</li>
+                    <li><b>Ducke:</b> Teaching Assistant & Organizer</li>
                 </ul>
             </section>
 			<section>
 				<h2>First Things First</h2>
 				<p>&nbsp;</p>
-				<p><strong>Thank you to our wonderful TAs!</strong></p>
+				<p><strong>Format of Class</strong></p>
 				<p>&nbsp;</p>
-				<p>Course website: </p>
-				<p>Instructor contact info: </p>
+				<p>Tuesday & Thursday each week from 6-8pm.</p>
+				<p>Small homework assignments on Tuesday</p>
 			</section>
 
 			<!-- Get Started -->
@@ -128,7 +130,7 @@
                 </ul>
 				<aside class="notes">Ask if everyone was able to download everything. If not, no big deal. download now.</aside>
             </section>
-			
+
 			<!-- Terms -->
             <section>
                 <h3>Terms</h3>
@@ -156,7 +158,7 @@
 					Analogy: Architect makes blueprints (designer). Carpenter makes building (developer).
 				</aside>
             </section>
-			
+
             <!-- What is HTML? -->
             <section>
                 <h3>What is HTML?</h3>
@@ -212,12 +214,12 @@
 				<p>+ <span class="fragment grow highlight-blue">CSS</span>: Presentation</p>
 				<p>= <span class="fragment grow highlight-blue">Your Website</span></p>
 				<p>A website is a way to present your content to the world, using HTML to structure that content, and CSS to make it look good.</p>
-			</section>	
+			</section>
 
 			<!-- Our Class Project -->
 			<section>
 				<h3>Our Class Project</h3>
-				<img src="img/design-before-after.png" alt="Design - before and after">				
+				<img src="img/design-before-after.png" alt="Design - before and after">
 				<aside class="notes">
 					This is our class project, but you can make anything you want out of it. Providing you with tools and resources to make what you want of it.
 					Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.
@@ -225,7 +227,7 @@
 					Start building this project in class 3.
 				</aside>
 			</section>
-			
+
 			<!-- Anatomy of a Website -->
 			<section>
 				<h3>Anatomy of a Website</h3>
@@ -239,7 +241,7 @@
 						</pre>
 					</li>
 					<li class = "fragment">
-						<div>+ <span class="blue">HTML</span>: Putting your content into an HTML tag to make it look like a paragraph is structure</div>					
+						<div>+ <span class="blue">HTML</span>: Putting your content into an HTML tag to make it look like a paragraph is structure</div>
 						<pre class="nowrap apache">
 							<code>
 								&lt;p>A paragraph is your content&lt;/p>
@@ -257,16 +259,16 @@
 				<aside class="notes">
 					We'll get to CSS next week. Show example of page with 'broken' CSS -- open up Inspector and remove all the CSS. Most people have seen this happen.
 				</aside>
-			</section>			
+			</section>
 
 			<!-- Anatomy of an HTML Element -->
 			<section>
-				<h3>Anatomy of an HTML element</h3>				
+				<h3>Anatomy of an HTML element</h3>
 				<ul>
 					<li>
 						<strong class="blue">Element</strong>
 						<ul>
-							<li>A full block, including opening and closing tags. An element is comprised of its content and tags.</li>	
+							<li>A full block, including opening and closing tags. An element is comprised of its content and tags.</li>
 						</ul>
 					</li>
 				</ul>
@@ -275,7 +277,7 @@
 &lt;section>Content in the middle&lt;/section>
 								</code>
 				</pre>
-			
+
 				<div class="fragment">
 					<ul>
 						<li>
@@ -284,7 +286,7 @@
 								<li>Tags mark the beginning and end of an element, and indicate the element's purpose. There are opening and closing tags:</li>
 							</ul>
 						</li>
-					</ul>					
+					</ul>
 					<pre class="nowrap apache">
 									<code>
 &lt;p>The p tag means this content is a paragraph.&lt;/p>
@@ -298,13 +300,13 @@
 				</div>
 				<aside class="notes">Think of the element as the block of code from the opening tag to closing tag, and the tag as just the container's start and finish. The tag is a component of the element, which is the huge block of code.</aside>
 			</section>
-			
+
 			<!-- Tag Breakdown -->
 			<section>
 				<h3>Tag Breakdown</h3>
 				<img src="img/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
 			</section>
-			
+
 			<!-- HTML Coding Tip -->
 			<section>
 				<h3>HTML Coding Tip #1</h3>
@@ -334,7 +336,7 @@
 				</ol>
 				<aside class="notes">Prevents any stray unclosed tags -- show an example in NotePad?</aside>
 			</section>
-	
+
 			<!-- Anatomy of an HTML element -->
 			<section>
 				<h3>Anatomy of an HTML element</h3>
@@ -359,14 +361,14 @@
 				</ul>
 			</section>
 			<section>
-				<h3>Anatomy of an HTML element</h3>	
-				<p class="blue">Attributes</p>				
+				<h3>Anatomy of an HTML element</h3>
+				<p class="blue">Attributes</p>
 				<p>Adding <span class="orange">attributes</span> to an HTML tag provides additional information about the HTML element</p>
 				<img src="img/html-tag.gif" alt="Attributes in HTML" />
 				<aside class="notes">Skip to next slide! Has more info</aside>
 			</section>
 			<section>
-				<h3>Anatomy of an HTML element</h3>		
+				<h3>Anatomy of an HTML element</h3>
 				<p class="blue">Attributes</p>
 				<img src="img/html-tag.gif" style="max-height:130px;" alt="Attributes in HTML" />
 				<ul>
@@ -394,12 +396,12 @@
 					Attribute placed inside an opening tag, right before the angle bracket. Can add as many as you want and order doesn't matter. Code an example of an image with multiple attributes (src, ID, class, alt, title). Each attribute separated by a space with name="value".
 				</aside>
 			</section>
-			
+
 			<!-- Fundamental Structure of an HTML File -->
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
 				<p class="blue">Doctype</p>
-				<p>The first thing in an HTML file is the doctype, which tells the browser which language the page is using:</p>				
+				<p>The first thing in an HTML file is the doctype, which tells the browser which language the page is using:</p>
 				<pre class="apache nowrap">
 					<code>
 						&lt;!DOCTYPE html>
@@ -422,10 +424,10 @@
 
 &lt;/html>
 				</code></pre>
-			</section>			
+			</section>
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
-				<p class="blue">Head Element</p>				
+				<p class="blue">Head Element</p>
 				<p>The head contains information about the page, but <u>does not contain page content</u>. It contains elements that let the browser know:</p>
 				<ul class="left-align" style="font-size:90%;margin-left:3em">
 					<li>The page's <span class="orange">title</span></li>
@@ -435,10 +437,10 @@
 <pre class="apache"><code>&lt;!DOCTYPE html>
 &lt;html>
 	&lt;head>
-					
+
 	&lt;/head>
-&lt;/html></code></pre>	
-				<aside class="notes">We'll get into the CSS file part next week</aside>		
+&lt;/html></code></pre>
+				<aside class="notes">We'll get into the CSS file part next week</aside>
 			</section>
 			<section>
 				<h3>The Fundamental Structure of an HTML File</h3>
@@ -449,18 +451,18 @@
 &lt;!DOCTYPE html>
 &lt;html>
 	&lt;head>
-					
+
 	&lt;/head>
 	&lt;body>
-	
+
 	&lt;/body>
 &lt;/html>
-				</code></pre>			
+				</code></pre>
 			</section>
 
 			<!-- Head and Body Tags: Example -->
 			<section>
-				<h3>Head and Body Tags: Example</h3>			
+				<h3>Head and Body Tags: Example</h3>
 				<img src="img/example-headbody.png" alt="example of head and body" style="box-shadow:none;"/>
 				<aside class="notes">Make a quick example on your machine, showing some head tags (title, possibly meta description), and some body tags as you update.</aside>
 			</section>
@@ -481,8 +483,8 @@
 
 				<aside class="notes">Memorize this, and you will go far! Every page begins with this.</aside>
 			</section>
-				
-				
+
+
 			 <section>
                 <h3>Get Started: Folder Structure</h3>
                 <p>All the files for your site should be stored within the same folder.</p>
@@ -515,12 +517,12 @@
                 </div>
                 <div class="right" style="width: 45%;">
                     <img src="img/folderstructure1.png" alt="Folder Structure">
-                </div>	
+                </div>
 				<aside class="notes">
 					Mac, PC, Linux -- doesn't matter. As long as the structure is the same and you choose a folder you'll have access to next week. MAKE FOLDERS IN FRONT OF STUDENTS.
 				</aside>
             </section>
-				
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's develop it!</h2>
@@ -531,12 +533,12 @@
 				</ol>
 				<img src="img/folderstructure1.png" alt="Folder Structure">
 				<p>Later we'll add some content to it!</p>
-				
+
 				<aside class="notes">
 					Code this alongside students from scratch. Have them open up index.html both in Chrome and in a text editor, tell them to refresh every time you add text to their text editor.
 				</aside>
-			</section>    
-			
+			</section>
+
 			<!-- Nesting-->
 			<section>
 			  <h3>Nesting</h3>
@@ -588,43 +590,43 @@
 	&lt;body>
 		All of your page content goes here
 	&lt;/body>
-&lt;/html></code></pre>	
+&lt;/html></code></pre>
 				<p class="green fragment">How about immediate children?</p>
 				<aside class="notes">Hint: There is one pair of siblings, so two siblings total. HTML tag called the 'root' element, parent of all parents.</aside>
 			</section>
-			
+
 			<!-- HTML Coding Tip -->
 			<section>
-				<h3>HTML Coding Tip #2</h3>				
+				<h3>HTML Coding Tip #2</h3>
 				<ol>
 					<li>Whenever you add a 'child' element:
 <pre><code class="html">&lt;ul&gt;
-&lt;/ul&gt;</code></pre>			<p>&nbsp;</p>			
+&lt;/ul&gt;</code></pre>			<p>&nbsp;</p>
 					</li>
 					<li>... indent it on a new line!
 <pre><code class="html">&lt;ul&gt;
 	&lt;li>I'm indented!&lt;/li&gt;
 	&lt;li>I'm also indented!&lt;/li&gt;
-&lt;/ul&gt;</code></pre>	
+&lt;/ul&gt;</code></pre>
 					</li>
-				</ol>		
+				</ol>
 				<p><br />This will make your life much easier down the road, as you add more content and style your pages.</p>
 				<aside class="notes">Helps you more obviously see the family relationships and troubleshoot problems.</aside>
-			</section>	
+			</section>
 			<section>
-				<h3>HTML Coding Tip #3</h3>				
+				<h3>HTML Coding Tip #3</h3>
 				<p>HTML ignores multiple whitespaces in a row. You can add consecutive white space characters (spaces, tabs, &amp; carriage returns) into your HTML, but when you view that page &mdash; <em>all but one disappears!</em></p>
 				<p>&nbsp;</p>
-				
+
 				<div>
 					<div class = "left" style = "width:50%">
 					<p><span class="orange"><u>HTML:</u></span></p>
 					<pre class="html"><code>
 					&lt;p>Two carriage returns
 					Three carriage returns
-					
-					
-					
+
+
+
 					Plus multiple spaces     ...&lt;/p>
 					</code></pre>
 					</div>
@@ -632,20 +634,20 @@
 					<div>
 						<p style="font-size:90%;">Two carriage returns
 						Three carriage returns
-						
-						
-						
+
+
+
 						Plus multiple spaces     ...</p>
 					</div>
-					<div class ="clear"></div>	
+					<div class ="clear"></div>
 				</div>
 				<p></p>
 				<p><small>To force consecutive spaces to show, use <em>&amp;nbsp;</em> (stands for <em>"no-break space"</em>) in your HTML instead of spaces.</small></p>
 				<aside class="notes">
 					This is very different from a word processor. You can use that to your advantage, for organizational purposes.
 				</aside>
-			</section>				
-			
+			</section>
+
 			<!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -656,12 +658,12 @@
 					<pre><code>&lt;p>Paragraph 1&lt;/p>
 					&lt;p>Paragraph 2&lt;/p>
 					&lt;p>Paragraph 3&lt;/p></code></pre>
-					<small><br />White space outside of any tags won't render (that's just for us humans!):<p><br /></p></small>					
+					<small><br />White space outside of any tags won't render (that's just for us humans!):<p><br /></p></small>
 					<pre><code>
-					&lt;p>Paragraph 1&lt;/p> 
+					&lt;p>Paragraph 1&lt;/p>
 
 
-					&lt;p>Paragraph 2&lt;/p>  
+					&lt;p>Paragraph 2&lt;/p>
 					&lt;p>Paragraph 3&lt;/p>
 					</code></pre>
 					</div>
@@ -671,7 +673,7 @@
 						<p>Paragraph 2</p>
 						<p>Paragraph 3</p>
 					</div>
-					<div class ="clear"></div>	
+					<div class ="clear"></div>
 				</div>
 			</section>
 			<section>
@@ -693,7 +695,7 @@
 						&lt;h4>Heading 4&lt;/h4>
 						&lt;h5>Heading 5&lt;/h5>
 						&lt;h6>Heading 6&lt;/h6></code></pre>
-					</div>					
+					</div>
 					<div class = "left" style = "width:50%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<h1 style = "font-size: 120%">Heading 1</h1>
@@ -703,7 +705,7 @@
 						<h5 style = "font-size: 85%">Heading 5</h5>
 						<h6 style = "font-size: 75%">Heading 6</h6>
 					</div>
-					<div class ="clear"></div>	
+					<div class ="clear"></div>
 				</div>
 				<hr />
 				<small>Heading number indicates hierarchy, not size. Think: Outlines from high school papers</small>
@@ -721,17 +723,17 @@
 						<p><span class="orange"><u>HTML:</u></span></p>
 						<pre class="apache">
 						<code>&lt;p>Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.&lt;/p></code></pre>
-					</div>					
+					</div>
 					<div class = "left" style = "width:30%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<p>Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.</p>
-					</div>	
-				</div>	
-				<div class ="clear"></div>					
+					</div>
+				</div>
+				<div class ="clear"></div>
 				<hr />
 				<small>Note: <em>em</em> and <em>strong</em> are meant to indicate meaning through style. If you want italicized or bold text for appearance and not to communicate meaning, you should use CSS.</small>
-			</section> 
-			
+			</section>
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's Develop It!</h2>
@@ -743,7 +745,7 @@
 				<p>&nbsp;</p>
 				<small class="blue">Remember to place content in the <em>body</em> element, not the <em>head</em></small>
 			</section>
-			
+
 			<!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -758,24 +760,24 @@
 					</li>
 					<li>The <span class="green">href</span> attribute (the destination of the link):
 						<p style="text-indent:2em;"><em>href="http://www.girldevelopit.com/chapters/boston"</em></p>
-					</li>					
+					</li>
 				</ol>
 				<p><pre class="apache"><code>&lt;a href="http://www.girldevelopit.com/chapters/boston">GDI Boston&lt;/a></code></pre></p>
 			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
-				<p class="blue">Additional Link Options</p>						
+				<p class="blue">Additional Link Options</p>
 				<ol>
 					<li>The <span class="green">title</span> attribute for descriptive 'hover' text:
 						<p style="text-indent:2em;"><em>title="Read more about GDI Boston"</em></p>
 					</li>
 					<li>The <span class="green">target</span> attribute:
 						<p style="text-indent:2em;"><em>target="_blank"</em> (opens link in a new tab)</p>
-					</li>					
+					</li>
 				</ol>
-				<p><pre class="apache"><code>&lt;a href="http://www.girldevelopit.com/chapters/boston" title="Read more about GDI Boston" target="_blank">GDI Boston&lt;/a></code></pre></p>				
+				<p><pre class="apache"><code>&lt;a href="http://www.girldevelopit.com/chapters/boston" title="Read more about GDI Boston" target="_blank">GDI Boston&lt;/a></code></pre></p>
 				<aside class="notes">The "title" is mainly for accessibility. Provides additional description when link hovered over. If there's time, show example of hover text.</aside>
-			</section>		
+			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Additional Link Options</p>
@@ -787,18 +789,18 @@
 						<p><span class="orange"><u>HTML:</u></span></p>
 						<pre>
 <code class="apache">&lt;a href="http://petsmart.com">
-	&lt;img src="http://lorempixel.com/150/200/animals/" />
+	&lt;img src="" />
 &lt;/a></code></pre>
-					</div>					
+					</div>
 					<div class = "left" style = "width:15%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<a href="http://petsmart.com">
-							<img style="box-shadow:none;margin:0;border:none;" src="http://lorempixel.com/150/200/animals/" />
+							<img style="box-shadow:none;margin:0;border:none;" src="" />
 						</a>
-					</div>	
+					</div>
 					<aside class="notes">Mention that we'll get to images very soon.</aside>
 				</div>
-				<div class ="clear"></div>		
+				<div class ="clear"></div>
 			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -809,7 +811,7 @@
 					</li>
 				</ol>
 			</section>
-			
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's Develop It</h2>
@@ -822,7 +824,7 @@
 					<li>Link to an e-mail address</li>
 				</ol>
 			</section>
-			
+
 			<!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -833,19 +835,19 @@
 						<p style="text-indent:2em;"><em>&lt;img /></em></p>
 					</li>
 					<li>The <span class="green">src</span> attribute:
-						<p style="text-indent:2em;"><em>src="http://lorempixel.com/200/200/city/"</em></p>
+						<p style="text-indent:2em;"><em>src=""</em></p>
 					</li>
 					<li>The <span class="green">alt</span> attribute:
 						<p style="text-indent:2em;"><em>alt="Picture of a city"</em></p>
-					</li>					
+					</li>
 				</ol>
-				<pre class="apache"><code>&lt;img src="http://lorempixel.com/200/200/city/" alt="Picture of a city" /></code></pre>
-				<p><img src="http://lorempixel.com/200/200/city/" alt="Picture of a city" style="box-shadow:none;border-radius:0;"/></p>
+				<pre class="apache"><code>&lt;img src="" alt="Picture of a city" /></code></pre>
+				<p><img src="" alt="Picture of a city" style="box-shadow:none;border-radius:0;"/></p>
 				<p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 				<aside class="notes">Clarify what lorempixel is if you haven't already.</aside>
-			</section>			
-			
-			<!-- File Paths -->	
+			</section>
+
+			<!-- File Paths -->
 			<section>
 				<h3>File Paths</h3>
 				<p class="blue">Relative vs. absolute paths for links, images, etc.</p>
@@ -867,18 +869,18 @@
 							<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="green">"http://www.girldevelopit.com/chapters/boston"</code></small></li>
 							<li>Typically used when pointing to a link that is not within your own domain.</li>
 						</ul>
-					</li>	
+					</li>
 				</ul>
 				<aside class="notes">Analogy: Relative paths are like directions, absolute are like a specific address.
 				Show example: Save an image from somewhere, then reference it in a text editor.</aside>
 			</section>
-			
+
 			<!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Line Break</p>
 				<div>
-					<div class = "left" style = "width:55%;font-size:85%">					
+					<div class = "left" style = "width:55%;font-size:85%">
 						<pre class="apache">
 <code>&lt;p>
 	You spin me right round, baby&lt;br />
@@ -893,14 +895,14 @@
 					<br/>
 					<br/>
 				</div>
-			</section>	
-        
+			</section>
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's Develop It!</h2>
 				<p>Let's add some images and line breaks to our page. We can even turn some images into links!</p>
-			</section>		
-			
+			</section>
+
 			<!-- Common HTML Elements -->
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -919,7 +921,7 @@
 	&lt;li>Another List Item&lt;/li>
 &lt;/ol></code>
 						</pre>
-					</div>					
+					</div>
 					<div class = "left" style = "width:50%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<ul style="margin-bottom:1em;">
@@ -930,11 +932,11 @@
 							<li>Ordered List Item</li>
 							<li>Another List Item</li>
 						</ol>
-					</div>	
-				</div>	
+					</div>
+				</div>
 				<hr />
 				<small>Unordered lists (ul) are bulleted by default, while ordered lists (ol) are numbered by default.</small>
-			</section>							
+			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Lists in Action</p>
@@ -942,7 +944,7 @@
 				<img src="img/example-lists.png" alt="Examples of lists" style="max-height:13.5em;" />
 				<p><small>You'd be surprised how often lists are used in web development.</small></p>
 			</section>
-			
+
 			<!-- Let's Develop It! -->
 			<section class="hide-pdf">
 				<h2>Let's Develop it!</h2>
@@ -956,7 +958,7 @@
 				<p>You can add comments to your code that will not be seen by the browser, but only visible when viewing the page source.</p>
 				<pre class="html"><code>&lt;!-- Comment goes here --></code></pre>
 				<p>&nbsp;</p>
-				<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small><br /></p>				
+				<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small><br /></p>
 				<pre class="html">
 <code>&lt;!-- Beginning of header -->
 &lt;div id="header">
@@ -971,7 +973,7 @@
 				<aside class="notes">
 					Commenting makes you a good person!
 				</aside>
-			</section> 
+			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
 				<p class="blue">Tables</p>
@@ -981,30 +983,30 @@
 						<p><span class="orange"><u>HTML:</u></span></p>
 						<pre class="apache">
 <code>&lt;table>
-	&lt;tr> 
+	&lt;tr>
 		&lt;th>Head 1&lt;/th>
 		&lt;th>Head 2&lt;/th>
 	&lt;/tr>
-	&lt;tr> 
+	&lt;tr>
 		&lt;td>Data 1&lt;/td>
 		&lt;td>Data 2&lt;/td>
 	&lt;/tr>
 &lt;/table></code></pre>
-					</div>					
+					</div>
 					<div class = "left" style = "width:50%">
 						<p><span class="orange"><u>Result:</u></span></p>
 						<table style="border:2px solid #ccc;border-collapse: collapse;">
-							<tr> 
+							<tr>
 								<th style="border:1px solid #ccc;">Head 1</th>
 								<th style="border:1px solid #ccc;">Head 2</th>
 							</tr>
-							<tr> 
+							<tr>
 								<td style="border:1px solid #ccc;">Data 1</td>
 								<td style="border:1px solid #ccc;">Data 2</td>
 							</tr>
 						</table>
-					</div>	
-				</div>	
+					</div>
+				</div>
 			</section>
 			<section>
 				<h3>Common HTML Elements</h3>
@@ -1028,20 +1030,20 @@
 						</li>
 						<li>Less than, greater than: &lt; and &gt;
 							<pre class="apache"><code>&amp;lt; and &amp;gt;</code></pre>
-						</li>						
+						</li>
 						<li>A full list is available <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">here</a></li>
 					</ul>
 				</div>
 				<div class="right" style="width: 40%;">
 					<img src="img/example-characters.png" alt="Example of Characters"/>
 				</div>
-			</section> 
+			</section>
 
 			<!-- Next Week -->
 			<section class="hide-pdf">
 				<h2>Next Week</h2>
 				<p class="blue">How to Style Sites &mdash; Introduction to CSS</p>
-				<p>&nbsp;</p>				
+				<p>&nbsp;</p>
 				<p>If you haven't already, try to make one of each element discussed in the lecture today and save your HTML file. Next week we'll style it!</p>
 			</section>
 			<section class="hide-pdf">
@@ -1055,7 +1057,7 @@
         </div>
         <footer>
             <div class="copyright">
-                Intro to HTML &amp; CSS&nbsp; | &nbsp;Boston Chapter &nbsp;| &nbsp;
+                HTML &amp; CSS&nbsp; 4wk Series <span class="red">&hearts;</span> Boulder/Denver  &nbsp;| &nbsp; 
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" />
                 </a>
             </div>
