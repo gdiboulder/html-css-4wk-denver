@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
 body {
-	text-align: center;
+	width: 900px;
+	margin: 0 auto;
 	font-family: 'Work Sans', sans-serif;
 }
 .btn {
@@ -20,5 +21,24 @@ body {
 }
 
 h3 {
-	color: pink;
+	color: #D34570;
+	font-weight: 700;
+}
+h3 small {color: #999898;}
+a:link {
+	color: #00A7E1
+}
+a:visited {
+	color: #8666AC;
+}
+
+a.btn {
+	background: #D34570;
+	color: #fff;
+	border: 2px solid #D34570;
+}
+a.btn-o {
+	background: #fff;
+	color: #D34570;
+	border: 2px solid #D34570;
 }
