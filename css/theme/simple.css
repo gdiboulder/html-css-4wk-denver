@@ -38,7 +38,7 @@ body {
   background-color: white; }
 
 .reveal {
-  font-family: "Gotham-Round", sans-serif;
+  font-family: "Gotham-Book", sans-serif;
   font-size: 36px;
   font-weight: 300;
   color: #53555C; }
@@ -65,7 +65,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #f05b62;
-  font-family: "Gotham-Round", Impact, sans-serif;
+  font-family: "Gotham-Bold", Impact, sans-serif;
   font-weight: 300;
   line-height: 0.9em;
   letter-spacing: 0.02em;
@@ -169,7 +169,7 @@ body {
     width: 100%;
     bottom: 3px;
     left: 0;
-    z-index: 10; 
+    z-index: 10;
     font-size: 35%;
     text-align:left;
     background-image: url(../images/pink-logo.png);
