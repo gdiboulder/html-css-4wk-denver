@@ -1,16 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
 body {
-	width: 900px;
 	margin: 0 auto;
 	font-family: 'Work Sans', sans-serif;
+}
+#container {
+	max-width: 900px;
+	margin: 0 auto;
 }
 .btn {
 	background: darkslategrey;
 	color: #fff;
 	display: inline-block;
 	padding: 1em;
-	width: 48%;
-	max-width: 300px;
+	width: auto;
+	max-width: ;
 	box-sizing: border-box;
 	margin: 1% auto;
 	text-decoration: none;

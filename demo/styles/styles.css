@@ -1,0 +1,53 @@
+body {
+  background: #f8f8f8;
+  color: #333333;
+  font-family: helvetica, arial, sans-serif;
+}
+
+#header {
+  background: #ffffff;
+  padding: 15px;
+  width: 1410px;
+  margin: 0 auto 25px auto;
+  border-bottom: 5px solid #4ec0b0;
+}
+
+.logo {
+  width: 300px;
+}
+
+#main-content {
+  background: #ffffff;
+  width: 1000px;
+  padding: 15px;
+}
+
+#main-content h1 {
+  color: #2a4758;
+  border-bottom: 1px solid #f05b62;;
+}
+
+#main-content h2 {
+  font-weight: normal;
+  color: #4ec0b0;
+}
+
+.pink {
+  color: #f05b62;
+}
+
+img.gallery {
+  width: 500px;
+}
+#side-bar {
+  background: #2a4758;
+  color: #f8f8f8;
+  width: 350px;
+  padding: 15px;
+  border-left: 5px solid #f05b62;
+}
+
+#side-bar h5, #side-bar h6 {
+  font-size: 18px;
+  color: #f05b62;
+}
