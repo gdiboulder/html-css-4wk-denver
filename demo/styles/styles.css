@@ -20,6 +20,7 @@ body {
   background: #ffffff;
   width: 1000px;
   padding: 15px;
+  float: left;
 }
 
 #main-content h1 {
@@ -39,15 +40,67 @@ body {
 img.gallery {
   width: 500px;
 }
+
 #side-bar {
   background: #2a4758;
   color: #f8f8f8;
   width: 350px;
   padding: 15px;
   border-left: 5px solid #f05b62;
+  float:right;
 }
 
 #side-bar h5, #side-bar h6 {
   font-size: 18px;
   color: #f05b62;
+}
+
+
+
+
+.year-gallery {
+  width: 28%;
+  position: relative;
+  border: 2px solid #666666;
+  line-height: 0;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+}
+
+
+
+
+.year-gallery p {
+  background: rgba(0,0,0,.8);
+  color: white;
+  position: absolute;
+  bottom: 1%;
+  padding: 20px;
+  font-size: 15px;
+  display: block;
+
+}
+
+.year-gallery img {
+  max-width: 100%;
+}
+
+.timeline {
+  clear: both;
+}
+
+
+.bio {
+  border-bottom: 2px solid #4ec0b0;
+  padding: 15px;
+  margin-bottom: 20px;
+  clear: both;
+  overflow: hidden;
+}
+
+.bio img {
+  float: left;
+  width: 200px;
+  margin: 0 15px 15px 0;
 }
