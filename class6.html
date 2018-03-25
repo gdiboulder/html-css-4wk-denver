@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Girl Develop It - Intro to HTML + CSS, Class 5</title>
+
+    <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Liz Shaw">
+    <meta name="author" content="Liz Shaw">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/slides.css">
+
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor-->
+    <link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <!-- Code Your Own Website -->
+            <section>
+                <h2>HTML / CSS 4wk series</h2>
+                <img src="img/circle-gdi-logo.png" alt="GDI Logo" />
+                <h3>Intermediate CSS </h3>
+                <p>
+                    <small>Session 6</small>
+                </p>
+            </section>
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Intermediate CSS!</h1>
+</section>
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Background-image</h1>
+</section>
+<section>
+    <h3>Background Image</h3>
+    <p>We can add background images to divs just like we do background colors.</p>
+    <pre><code class="css">#header {
+background: url(../images/cacti.jpg) no-repeat top left;
+color: #ffffff;
+text-align: center;
+}
+</code></pre>
+</section>
+  <section>
+      <h3>Background-size</h3>
+      <p>We can adjust the size of the image by using a property called:
+          <code>background-size</code>
+      </p>
+      <pre><code class="css">#header {
+background: url(../images/cacti.jpg) no-repeat top left;
+color: #fafafa;
+text-align: center;
+height: 350px;
+padding: 25px 0;
+background-size: cover;
+}
+</code></pre>
+      <p>
+          We can apply a value of "<code>cover</code>" so that we can scale the image to the largest size such that both its width and its height can fit inside the content area.</p>
+  </section>
+
+  <section>
+      <h3>Develop It!</h3>
+      <p>Let's add a background image to a div. In the example we added a background image to the header.
+
+
+  </section>
+
+  <section data-background="#f05b62">
+          <h1 style="color: #fafafa;">CSS Gradients</h1>
+      </section>
+  <section>
+    <h2>Gradients</h2>
+    <p>Build gradients with CSS - because doing it with images is annoying! </p>
+  </section>
+  <section>
+    <h2>Linear gradients</h2>
+    <pre><code class="css">.linear-example1 {
+background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+.linear-example2 {
+background-image: linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+}
+.linear-example3 {
+background-image: linear-gradient(bottom right, red, orange, yellow, green, blue, indigo, violet);
+}</code></pre>
+    <article class="gradients">
+      <div class="linear-example1">
+      </div>
+      <div class="linear-example2">
+      </div>
+      <div class="linear-example3">
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Linear gradients</h2>
+    <pre><code class="css">.linear-example4 {
+background-image: linear-gradient(red, white);
+}
+.linear-example5 {
+background-image: linear-gradient(right, red, white);
+}
+.linear-example6 {
+background-image: linear-gradient(bottom right, red, white);
+}</code></pre>
+    <article class="gradients">
+      <div class="linear-example4">
+      </div>
+      <div class="linear-example5">
+      </div>
+      <div class="linear-example6">
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Radial gradients</h2>
+    <pre><code>.radial-example1 {
+background-image: radial-gradient(circle cover, red, orange, yellow, green, blue, indigo, violet);
+}
+.radial-example2 {
+background-image: radial-gradient(0 0, circle, red, orange, yellow, green, blue, indigo, violet);
+}
+.radial-example3 {
+background-image: radial-gradient(0 50%, circle, red, orange, yellow, green, blue, indigo, violet);
+}</code></pre>
+    <article class="gradients">
+      <div class="radial-example1">
+      </div>
+      <div class="radial-example2">
+      </div>
+      <div class="radial-example3">
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>Radial gradients</h2>
+    <pre><code>.radial-example4 {
+background-image: radial-gradient(circle cover, red, white);
+}
+.radial-example5 {
+background-image: radial-gradient(0 0, circle, red, white);
+}
+.radial-example6 {
+background-image: radial-gradient(0 50%, circle, red, white);
+}</code></pre>
+    <article class="gradients">
+      <div class="radial-example4">
+      </div>
+      <div class="radial-example5">
+      </div>
+      <div class="radial-example6">
+      </div>
+    </article>
+  </section>
+  <section>
+    <h2>CSS gradients are a pain to do from scratch</h2>
+    <p>That's why people have made things like the <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">Ultimate CSS Gradient Generator</a> to make our lives easier!</p>
+  </section>
+
+
+
+  <section>
+      <h3>Develop It!</h3>
+      <p>Add a background gradient to a section of your site</p>
+  </section>
+
+  <section data-background="#f05b62">
+          <h1 style="color: #fafafa;">RGBA & Opacity</h1>
+      </section>
+      <section>
+    <h3>rgba colors &amp; opacity</h3>
+    <p>In CSS, we can choose colors with hexadecimal <span style="color: #0000FF">#0000FF</span> or <span style="color: rgb(0, 0, 255)">rgb(0, 0, 255)</span></p>
+    <p>In CSS3, there are ways to control opacity of a color too!</p>
+    <ul>
+      <li><strong>rgba</strong> - controls the opacity of a color</li>
+      <li><strong>opacity</strong> - controls the opacity of an element</li>
+    </ul>
+  </section>
+  <section>
+    <h3>rgba colors &amp; opacity</h3>
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: 1; height: 50px; width: 40%; float: right; margin-bottom: 20px; border: 3px solid black;">
+          opacity: 1;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, 1); height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, 1);
+        </div>
+      </article>
+
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: .8; height: 50px; width: 40%; float: right; margin-bottom: 20px;border: 3px solid black;">
+          opacity: .8;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, .8);  height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, .8);
+        </div>
+      </article>
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: .6; height: 50px; width: 40%; float: right; margin-bottom: 20px;border: 3px solid black;">
+          opacity: .6;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, .6);  height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, .6);
+        </div>
+      </article>
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: .4; height: 50px; width: 40%; float: right; margin-bottom: 20px;border: 3px solid black;">
+          opacity: .4;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, .4);  height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, .4);
+        </div>
+      </article>
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: .2; height: 50px; width: 40%; float: right; margin-bottom: 20px;border: 3px solid black;">
+          opacity: .2;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, .2);  height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, .2);
+        </div>
+      </article>
+      <article class="fragment">
+        <div style="background-color: rgb(255, 0, 0); opacity: .1; height: 50px; width: 40%; float: right; margin-bottom: 20px;border: 3px solid black;">
+          opacity: .1;
+        </div>
+        <div style="background-color: rgba(255, 0, 0, .1);  height: 50px; width: 40%; float: left; margin-bottom: 20px;border: 3px solid black;">
+          rgba(255, 0, 0, .1);
+        </div>
+      </article>
+
+  </section>
+  <section>
+    <h3>rgba colors</h3>
+    <p>controls the opacity of a color</p>
+    <pre><code>
+.example2 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+    </code></pre>
+    <p>color property using (red, green, blue, opacity)</p>
+    <p>opacity is a decimal value from 0 to 1</p>
+    <ul>
+      <li>0 - not visible</li>
+      <li>1 - fully visible</li>
+    </ul>
+  </section>
+  <section>
+    <h3>opacity</h3>
+    <p>controls the opacity of an element</p>
+    <pre><code>
+.example2 {
+  opacity: 0.8;
+}
+    </code></pre>
+    <p>decimal value from 0 to 1</p>
+    <ul>
+      <li>0 - not visible</li>
+      <li>1 - fully visible</li>
+    </ul>
+  </section>
+  <section>
+      <h3>Develop It!</h3>
+      <p>Change some colors to have alpha transparency or opacity.</p>
+      <p>Use <a href="http://hex2rgba.devoth.com/" target="_blank">http://hex2rgba.devoth.com/</a> to convert HEX to RGBA.</p>
+      <p>Hint: Try making the navbar 80% opaque.</p>
+
+  </section>
+  <section data-background="#f05b62">
+          <h2 style="color: #fafafa;">Text Shadow</h2>
+      </section>
+      <!--Text Shadow-->
+<section>
+  <h2>text-shadow</h2>
+  <pre><code>#example1 { text-shadow: 2px 2px 10px red; }
+
+#example2 {
+text-shadow: 1px 1px 10px red,
+      10px 10px 10px orange,
+      15px 15px 10px yellow,
+      20px 20px 10px green,
+      25px 25px 10px blue,
+      30px 30px 10px purple;
+}</code></pre>
+  <article class="text-shadow">
+    <div class="example1">lorem ipsum</div>
+    <div class="example2">lorem ipsum</div>
+  </article>
+</section>
+      <section data-background="#f05b62">
+          <h2 style="color: #fafafa;">Box Shadow</h2>
+      </section>
+      <section>
+    <h3>box-shadow</h3>
+    <p>Adds a drop shadow to an element</p>
+  </section>
+  <section class="example1">
+    <h3>box-shadow</h3>
+    <p>box-shadow: offset-x offset-y color</p>
+    <pre><code>
+.example1 { box-shadow: 5px 5px red; }
+    </code></pre>
+    <div style="box-shadow: 5px 5px red; height: 100px; width: 100px; border: 2px solid black; margin: 0 auto;">
+    </div>
+  </section>
+  <section class="example2">
+    <h3>box-shadow</h3>
+    <p>box-shadow: offset-x offset-y blur spread color</p>
+    <pre><code>
+.example { box-shadow: 0 0 5px 5px red; }
+    </code></pre>
+    <div style="box-shadow: 0 0 5px 5px red; height: 100px; width: 100px; border: 2px solid black; margin: 0 auto;">
+    </div>
+  </section>
+  <section>
+    <h3>box-shadow</h3>
+    <p>box-shadow: offset-x offset-y blur spread color</p>
+    <pre><code>
+.example { box-shadow: 0 2px 5px 0px red; }
+    </code></pre>
+    <div style="box-shadow: 0 2px 5px 0px red; height: 100px; width: 100px; border: 2px solid black; margin: 0 auto;">
+    </div>
+  </section>
+  <section>
+      <h3>Develop It! </h3>
+      <ul>
+          <li>Add shadows to your text</li>
+          <li>Remember: Be subtle!</li>
+          <li>Add a box-shadow to the nav</li>
+      </ul>
+  </section>
+			<!-- Flow -->
+
+
+			<!-- Thank you! -->
+			<section data-background="#f05b62">
+                <h1 style="color: #fafafa;">Homework</h1>
+		  </section>
+      <section>
+        <h2>Homework</h2>
+        [TODO]
+      </section>
+    </div>
+    <footer>
+        <div class="copyright">
+            HTML &amp; CSS&nbsp; 4wk Series <span class="red">&hearts;</span> Boulder/Denver  &nbsp;| &nbsp;
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" />
+            </a>
+        </div>
+    </footer>
+  </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/accessibility-helper/js/accessibility-helper.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>

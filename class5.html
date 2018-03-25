@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Girl Develop It - Intro to HTML + CSS, Class 5</title>
+
+    <meta name="description" content="Girl Develop It's Intro to HTML and CSS course, customized by Liz Shaw">
+    <meta name="author" content="Liz Shaw">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor-->
+    <link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <!-- Code Your Own Website -->
+            <section>
+                <h2>HTML / CSS 4wk series</h2>
+                <img src="img/circle-gdi-logo.png" alt="GDI Logo" />
+                <h3>Intermediate CSS/HTML</h3>
+                <p>
+                    <small>Session 5</small>
+                </p>
+            </section>
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Common Applications</h1>
+</section>
+<section>
+    <h3>Common Applications</h3>
+    <p>HTML &amp; CSS are awesome, right?</p>
+    <p>But how do people use them
+        <span class="green">really?</span>
+        <p>Here's a few things we'll be covering today:</p>
+        <ul>
+            <li class="fragment">CSS Resets (how to make your life easier</li>
+            <li class="fragment">Fixed vs. Fluid Width layouts.</li>
+            <li class="fragment">Horizontal &amp; fixed navigation.</li>
+            <li class="fragment">Custom font-faces</li>
+        </ul>
+</section>
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Standard Practices</h1>
+</section>
+<section>
+    <h3>Standard Practices</h3>
+    <ul>
+        <li class="fragment">Reset CSS files</li>
+        <li class="fragment">Standard widths and sizes</li>
+        <li class="fragment">Containers for layout</li>
+    </ul>
+</section>
+<section>
+    <h3>Reset CSS</h3>
+    <p>Even though HTML is the structure and CSS is the design, some HTML elements have default styles</p>
+    <p>Different browsers display these things differently. A reset gets rid of these inconsistencies.</p>
+    <p class="fragment">
+        <strong>Examples include:</strong>
+    </p>
+    <ul class="fragment">
+        <li>Bulleted lists like this one have standard bullets</li>
+        <li>Paragraphs &amp; headings have default padding</li>
+        <li>Links are blue and underlined</li>
+    </ul>
+</section>
+<section>
+    <h3>Reset CSS</h3>
+    <div>
+        Most elements:
+        <pre><code class = "html">
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+</code></pre>
+    </div>
+    <div>
+        Lists:
+        <pre><code class = "html">
+list-style: none;
+</code></pre>
+    </div>
+</section>
+<section>
+    <h3>Reset CSS</h3>
+    <p>Instead of typing all this out - copy it from here: [LINK]</p>
+</section>
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Fixed vs. Fluid Width pages</h1>
+</section>
+
+<section>
+    <h3>Fixed vs. Fluid Width pages</h3>
+    <p>
+        <strong class="blue">Fixed</strong>
+    </p>
+    <ul>
+        <li>Fixed websites have a set width for the wrapper, usually 960px to 1024px.</li>
+        <li>The elements inside the wrapper have a set width, or percentage of the wrapper width.</li>
+        <li>No matter the screensize, the user always sees the same size site.</li>
+    </ul>
+</section>
+<section>
+    <h3>Fixed vs. Fluid Width pages</h3>
+    <p>
+        <strong class="blue">Fluid</strong>
+    </p>
+    <ul>
+        <li>Also referred to as a liquid layout.</li>
+        <li>Majority of the components, including the wrapper, have percentages for their widths.</li>
+        <li>The layout adjusts for the width of the user's screen resolution.</li>
+        <li>Sounds like a responsive site right!? More on that later.</li>
+    </ul>
+</section>
+
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Containers</h1>
+</section>
+
+<section>
+    <h3>Containers</h3>
+    <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
+    <pre><code class = "html">
+.container {
+width: 100%; /* take up full viewport width */
+max-width: 1440px; /* if viewport is larger than 1440px,
+                don't let it take up 100% */
+margin: 0 auto; /* center content in the viewport */
+}
+</code></pre>
+    <ol>
+        <li>The container will take up 100% of the screen if the width of the viewport is less than 1440px.</li>
+        <li>If the viewport is wider than 1440px, it will reach it's max width, and become centered in the viewport.</li>
+    </ol>
+
+</section>
+
+<section>
+  <h3>Let's develop it!</h3>
+  <p>Let's add a container to our page so we can center things more easily.</p>
+  <p>Decide if you want it to be a fluid container (percentage) or fixed (pixels).</p>
+</section>
+
+<section data-background="#f05b62">
+    <h1 style="color: #fafafa;">Horizontal Fixed Nav</h1>
+</section>
+<section>
+    <h3>All the cool kids are doing it</h3>
+    <ul>
+        <li>Horizontal fixed-to-top nav allows users to have access to navigational elements at all times</li>
+        <li>All the rage these days</li>
+        <li>Be careful - screen heights vary, and it reduces the amount of content visible on smaller screens</li>
+    </ul>
+</section>
+<section>
+    <h3>Fixed Nav: HTML</h3>
+    <p>Let's include it in a header, since we know we'll be grouping related content here.</p>
+    <pre><code class="xml">
+<header>
+<nav>
+<ul>
+<li><a href="#home">My Home</a></li>
+<li><a href="#diet">My Diet</a></li>
+<li><a href="#pattern">Stripes</a></li>
+</ul>
+</nav>
+</header>
+</code></pre>
+</section>
+<section>
+    <h3>Fixed Nav: CSS</h3>
+    <p>Remember, using fixed position is like using absolute position, except that it's fixed to the viewport, not the containing element.</p>
+    <p>We also have to define a width for it, and its location.</p>
+    <pre><code class="css">
+nav {
+position: fixed;
+top: 0;
+left: 0;
+background: #fafafa;
+border-bottom: 2px solid #ccc;
+height: 70px;
+width: 100%;
+}</code></pre>
+</section>
+<section>
+    <h3>Fixed Nav: CSS</h3>
+    <p>Because we've fixed the nav to the top of the viewport, we need to bump the content of the
+        <code>body</code> down to be visible to the user.</p>
+    <p>This should be the same, or more than, the height of the navigation bar.</p>
+    <pre><code class="css">
+body {
+padding-top: 70px;
+}
+nav {
+position: fixed;
+top: 0;
+left: 0;
+background: #fafafa;
+border-bottom: 2px solid #ccc;
+height: 70px;
+width: 100%;
+}</code></pre>
+</section>
+<section>
+    <h3>Fixed Nav: CSS</h3>
+    <p>Now we need to get those list items next to each other instead of stacked.</p>
+    <p>Let's float them to the left and add some padding to the links so they have a large clickable area.</p>
+    <pre><code class="css">nav {
+position: fixed;
+top: 0;
+left: 0;
+background: #fafafa;
+border-bottom: 2px solid #ccc;
+height: 70px;
+width: 100%;
+}
+nav li {
+float: left;
+width: auto;
+}
+nav li a {
+padding: 25px 10px;
+display: block;
+}
+</code></pre>
+</section>
+
+  <section>
+      <h3>Fixed Nav: Container</h3>
+      <p>Let's give the container a fixed width and see what happens.</p>
+      <pre><code class="css">.container {
+width: 1024px;
+margin: 0 auto;
+}</code></pre>
+      <p>Now wherever we use
+          <code>.container</code> it will be 1024px wide and centered.</p>
+  </section>
+
+  <section>
+    <h2>Let's develop it!</h2>
+    <p>Let's make a Horizontal fixed navigation.</p>
+
+  </section>
+  <section data-background="#f05b62">
+      <h1 style="color: #fafafa;">Custom Fonts</h1>
+  </section>
+  <section>
+      <h3>@font-face</h3>
+      <p>The world of HTML has progressed beyond Times New Roman and Arial</p>
+      <p class="green">Yay!</p>
+      <p>How do we use new and cool fonts?</p>
+  </section>
+  <section>
+      <h3>Class, meet Google Web Fonts</h3>
+      <p>Google has hundreds of free, open-source fonts that have been optimized for the web, and ready for us to use!</p>
+      <p>The service runs on Google's servers which are fast, reliable and tested. Google provides this service free of charge.</p>
+  </section>
+  <section data-background="#f05b62">
+      <h2 style="color: #fafafa;"><a href="http://www.google.com/fonts" style="color: #fafafa;" target="_blank">www.google.com/fonts</a>
+      </h2>
+  </section>
+  <!-- Fonts-->
+  <section>
+      <h3>@font-face</h3>
+      <p>In our example, we've used Lato for the body and Bree Serif for the headlines</p>
+      <p>You can use any font you'd like!</p>
+      <img src="images/lato.png" alt="lato" style="width: 40%; float: left;" />
+      <img src="images/bree.png" alt="bree" style="width: 40%; float: right;" />
+  </section>
+  <section>
+      <h3>Using Google Fonts in 3 steps!</h3>
+      <ol>
+          <li>Search the hundreds of font families, then add them to your collection.</li>
+          <li>Compare and refine the collection - think about what styles you NEED.</li>
+          <li>Grab the code that Google prepares for you and add it to your site!</li>
+      </ol>
+      <pre><code class = "html">
+@import url(http://fonts.googleapis.com/
+css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
+</code></pre>
+      <a href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif" target="_blank">What does that do?</a>
+  </section>
+
+  <section>
+      <h3>Integrating into the CSS</h3>
+      <pre><code class = "html">
+body{
+font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Bree Serif', serif;
+}
+</code></pre>
+  </section>
+  <section>
+      <h3>Develop It!</h3>
+      <p>Pick some fonts for your site using Google Fonts.</p>
+      <p>Adjust the
+          <code>font-size</code> and
+          <code>line-height</code> to refine your fonts.</p>
+  </section>
+			<!-- Flow -->
+
+
+			<!-- Thank you! -->
+			<section data-background="#f05b62">
+                <h1 style="color: #fafafa;">See you on Thursday!</h1>
+		  </section>
+
+    </div>
+    <footer>
+        <div class="copyright">
+            HTML &amp; CSS&nbsp; 4wk Series <span class="red">&hearts;</span> Boulder/Denver  &nbsp;| &nbsp;
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" />
+            </a>
+        </div>
+    </footer>
+  </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/accessibility-helper/js/accessibility-helper.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
