@@ -76,6 +76,9 @@
     <h1 style="color: #fafafa;">Standard Practices</h1>
 </section>
 <section>
+    <aside>
+      Talk about how these items are standards that almost every site uses.
+    </aside>
     <h3>Standard Practices</h3>
     <ul>
         <li class="fragment">Reset CSS files</li>
@@ -118,10 +121,19 @@ list-style: none;
 </section>
 <section>
     <h3>Reset CSS</h3>
-    <p>Instead of typing all this out - copy it from here: [LINK]</p>
+    <p>Instead of typing all this out - copy it from here: <a href="https://marksheet.io/css/reset.css" target="_blank">https://marksheet.io/css/reset.css</a></p>
+</section>
+<section>
+  <h2>Develop It!</h2>
+  <ol>
+    <li>Visit this URL: <a href="https://marksheet.io/css/reset.css" target="_blank">https://marksheet.io/css/reset.css</a>
+    <li>Save this file to your css or styles directory. (In your browser do File > Save As)
+    <li>Link your new reset.css file in your head BEFORE your styles.css file. Remember the cascade!
+    <li>Don't forget to include it on all your pages if you have made multiple html files.
+  </ol>
 </section>
 <section data-background="#f05b62">
-    <h1 style="color: #fafafa;">Fixed vs. Fluid Width pages</h1>
+    <h1 style="color: #fafafa;">Fixed vs. <br/>Fluid Width pages</h1>
 </section>
 
 <section>
@@ -153,22 +165,36 @@ list-style: none;
 </section>
 
 <section>
-    <h3>Containers</h3>
+    <h3>Fixed Container</h3>
     <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
     <pre><code class = "html">
 .container {
-width: 100%; /* take up full viewport width */
-max-width: 1440px; /* if viewport is larger than 1440px,
-                don't let it take up 100% */
+width: 1440px;
 margin: 0 auto; /* center content in the viewport */
 }
 </code></pre>
-    <ol>
-        <li>The container will take up 100% of the screen if the width of the viewport is less than 1440px.</li>
-        <li>If the viewport is wider than 1440px, it will reach it's max width, and become centered in the viewport.</li>
-    </ol>
+
+        <P>The container will be 1440px wide and centered on the screen if the viewport (browser window) is larger than 1440px.</P>
+
 
 </section>
+
+<section>
+    <h3>Fluid Container</h3>
+    <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
+    <pre><code class = "html">
+.container {
+width: 80%;
+margin: 0 auto; /* center content in the viewport */
+}
+</code></pre>
+
+        <P>The container will be 80% of the viewport (browser window) and centered within it.</P>
+
+
+
+</section>
+
 
 <section>
   <h3>Let's develop it!</h3>
@@ -262,13 +288,14 @@ display: block;
 
   <section>
       <h3>Fixed Nav: Container</h3>
-      <p>Let's give the container a fixed width and see what happens.</p>
-      <pre><code class="css">.container {
-width: 1024px;
-margin: 0 auto;
-}</code></pre>
+      <p>Let's align our links and navigation content by adding a container around the items.</p>
+      <pre><code class="css">
+        &lt;div class="container"&gt;
+          CONTENT OF NAV
+        &lt;/div&gt;
+     </code></pre>
       <p>Now wherever we use
-          <code>.container</code> it will be 1024px wide and centered.</p>
+          <code>.container</code> in our HTML we will have our content centered. </p>
   </section>
 
   <section>
@@ -297,7 +324,7 @@ margin: 0 auto;
   <!-- Fonts-->
   <section>
       <h3>@font-face</h3>
-      <p>In our example, we've used Lato for the body and Bree Serif for the headlines</p>
+      <p>Let's check out Lato for the body and Bree Serif for the headlines</p>
       <p>You can use any font you'd like!</p>
       <img src="images/lato.png" alt="lato" style="width: 40%; float: left;" />
       <img src="images/bree.png" alt="bree" style="width: 40%; float: right;" />

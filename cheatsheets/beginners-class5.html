@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Positioning & Floating</title>
+		<link rel='stylesheet' href='css/styles.css' type='text/css' media='all' />
+
+	</head>
+
+	<body id="beginners-class4">
+		<h1>Intermediate CSS/HTML</h2>
+
+		<section>
+			<div>
+				<h2>Reset CSS</h2>
+				<ul style="margin-top:0;">
+					<li>Different browsers display these things differently. A reset gets rid of these inconsistencies.</li>
+				</ul>
+				<h3 style="margin:0;font-size:1em;">Most Elements:</h3>
+				<pre><code>
+<span class="code-content">margin:</span> 0;
+<span class="code-content">padding:</span> 0;
+<span class="code-content">border:</span> 0;
+<span class="code-content">font-size: </span>100%;
+<span class="code-content">font:</span> inherit;
+<span class="code-content">vertical-align:</span> baseline;
+				</code></pre>
+
+				<h3 style="margin:0;font-size:1em;">Lists</h3>
+
+				<pre><code>
+<span class="code-content">list-style:</span> none;
+				</code></pre>
+
+				<h3 style="margin:0;font-size:1em;">Pre-made CSS File</h3>
+				<p>Instead of typing all this out - copy it from here: <a href="https://marksheet.io/css/reset.css" target="_blank">https://marksheet.io/css/reset.css</a></p>
+
+			</div>
+
+			<div>
+				<h2>Fixed Container</h2>
+				<p>The container will be 1440px wide and centered on the screen if the viewport (browser window) is larger than 1440px.</p>
+				<pre><code>
+.container {
+   <span class="code-content">width:</span> 1440px;
+	 <span class="code-content">margin:</span> 0 auto;
+}
+
+</code></pre>
+</div>
+			<div>
+				<h2>Fluid Container</h2>
+				<p>The container will be 80% of the viewport (browser window) and centered within it.</p>
+				<pre><code>
+.container {
+   <span class="code-content">width:</span> 80%;
+	 <span class="code-content">margin:</span> 0 auto;
+}
+
+</code></pre>
+</div>
+			<div>
+				<h2>Position: <em>Fixed</em></h2>
+				<p>Fixed positioning is similar to an aboslute positioned element in that it is taken out of flow. However, it is positioned relative to the viewport - no matter what container it is in.</p>
+				<pre><code>
+selector {
+   <span class="code-content">position:</span> fixed;
+   <span class="code-content">top:</span> 0;
+   <span class="code-content">left:</span> 0;
+}
+				</code></pre>
+			</div>
+		</section>
+
+		<section>
+
+
+
+			<div>
+				<h2>Google Fonts</h2>
+				  <p>Google has hundreds of free, open-source fonts that have been optimized for the web, and ready for us to use!</p>
+		      <p>The service runs on Google's servers which are fast, reliable and tested. Google provides this service free of charge.</p>
+					<p>Visit: <a href="http://www.google.com/fonts" target="_blank">www.google.com/fonts</a></p>
+			</div>
+			<div>
+				<h2>Using Google Fonts</h2>
+				<ol>
+	          <li>Search the hundreds of font families, when you've found a font you like, click the "Select This Font"  button on the font page.</li>
+	          <li>Compare and refine the collection.</li>
+	          <li>Copy the import code and place it in the top in your styles css file.</li>
+	      </ol>
+
+				<pre><code>
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
+				</code></pre>
+				<h2>Style text on your site</h2>
+				<pre><code>
+body {
+    <span class="code-content">font-family:</span> 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    <span class="code-content">font-family:</span> 'Bree Serif', serif;
+}
+				</code></pre>
+			</div>
+
+
+
+		</section>
+
+	</body>
+
+</html>
