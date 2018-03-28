@@ -1,15 +1,45 @@
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
 body {
   background: #f8f8f8;
   color: #333333;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  padding-top: 100px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+p {
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
 #header {
   background: #ffffff;
   padding: 15px;
-  width: 1410px;
   margin: 0 auto 25px auto;
   border-bottom: 5px solid #4ec0b0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9001;
+}
+#header nav li {
+  float: left;
 }
 
 .logo {
@@ -18,7 +48,7 @@ body {
 
 #main-content {
   background: #ffffff;
-  width: 1000px;
+  width: 70%;
   padding: 15px;
   float: left;
 }
@@ -29,7 +59,8 @@ body {
 }
 
 #main-content h2 {
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
   color: #4ec0b0;
 }
 
@@ -44,7 +75,7 @@ img.gallery {
 #side-bar {
   background: #2a4758;
   color: #f8f8f8;
-  width: 350px;
+  width: 30%;
   padding: 15px;
   border-left: 5px solid #f05b62;
   float:right;
