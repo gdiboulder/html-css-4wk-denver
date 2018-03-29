@@ -45,6 +45,95 @@ header {
 
 			</div>
 
+
+<div>
+	<h2>Radial Gradients</h2>
+	<p>Creates an image consisting of a progressive transition between two or more color in a radius. </p>
+	<h3 style="margin:0;  ">Center</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(circle cover, red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;  ">Top Left</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 0, circle, red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;">Middle Left</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 50%, circle, red, orange);
+}
+
+	</code></pre>
+			</div>
+			<div>
+				<h2>Linear Gradients</h2>
+				<p>Creates an image consisting of a progressive transition between two or more colors along a straight line. </p>
+				<h3 style="margin:0;  ">Top to bottom</h3>
+				<pre><code>
+			header {
+			     <span class="code-content">background-image:</span>  -webkit-linear-gradient(red, orange);
+			}
+
+				</code></pre>
+				<h3 style="margin:0;  ">Right to left</h3>
+				<pre><code>
+			header {
+			     <span class="code-content">background-image:</span>  -webkit-linear-gradient(right, red, orange);
+			}
+
+				</code></pre>
+				<h3 style="margin:0;  ">Using Degrees</h3>
+				<pre><code>
+			header {
+			     <span class="code-content">background-image:</span>  -webkit-linear-gradient(45deg, red, orange);
+			}
+
+				</code></pre>
+
+						</div>
+<div>
+	<h2>RGBA</h2>
+		<p>Controls the opacity of a color</p>
+		<p>Color property using (red, green, blue, opacity) </p>
+		<p>opacity is a decimal value from 0 to 1
+<ul>
+<li>0 - not visible</li>
+<li>1 - fully visible</li>
+</ul>
+<pre><code>
+.example {
+<span class="code-content">background:</span>   rgba(255, 0, 0, 0.8);
+}
+
+</code></pre>
+
+</div>
+<div>
+	<h2>Opacity</h2>
+		<p>Controls the opacity of an element</p>
+		<p>opacity is a decimal value from 0 to 1
+<ul>
+<li>0 - not visible</li>
+<li>1 - fully visible</li>
+</ul>
+<pre><code>
+.example {
+<span class="code-content">opacity:</span>   0.8;
+}
+
+</code></pre>
+
+</div>
+		</section>
+
+		<section>
+
 			<div>
 				<h2>Background size</h2>
 <p>Allows you to resize the background inside its container.</p>
@@ -86,61 +175,40 @@ header {
 				</code></pre>
 						</div>
 <div>
-	<h2>Linear Gradients</h2>
-	<p>Creates an image consisting of a progressive transition between two or more colors along a straight line. </p>
-	<h3 style="margin:0;  ">Top to bottom</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-linear-gradient(red, orange);
+	<h2>Text-shadow</h2>
+		<p>Add a drop shadow to a text element to make it stand out against its background.
+<ul>
+<li>The first value is the X-coordinate</li>
+<li>Second value is the Y-coordinate</li>
+<li>Third value is the blur radius </li>
+<li>Fourth value is the color of the shadow</li>
+</ul>
+<pre><code>
+h1 {
+<span class="code-content"> text-shadow: </span> 2px 2px 10px red;
 }
 
-	</code></pre>
-	<h3 style="margin:0;  ">Right to left</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-linear-gradient(right, red, orange);
-}
+</code></pre>
 
-	</code></pre>
-	<h3 style="margin:0;  ">Using Degrees</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-linear-gradient(45deg, red, orange);
-}
-
-	</code></pre>
-
-			</div>
+</div>
 <div>
-	<h2>Radial Gradients</h2>
-	<p>Creates an image consisting of a progressive transition between two or more color in a radius. </p>
-	<h3 style="margin:0;  ">Center</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-radial-gradient(circle cover, red, orange);
+	<h2>Box-shadow</h2>
+		<p>Adds a drop shadow to an element
+<ul>
+<li>The first value is the offset-x</li>
+<li>Second value is the offset-y</li>
+<li>Third value is the blur </li>
+<li>Fourth value is the spread </li>
+<li>Fifth value is the color of the shadow</li>
+</ul>
+<pre><code>
+h1 {
+<span class="code-content"> box-shadow: </span>  0 0 5px 5px red;
 }
 
-	</code></pre>
-	<h3 style="margin:0;  ">Top Left</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 0, circle, red, orange);
-}
+</code></pre>
 
-	</code></pre>
-	<h3 style="margin:0;">Middle Left</h3>
-	<pre><code>
-header {
-     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 50%, circle, red, orange);
-}
-
-	</code></pre>
-			</div>
-		</section>
-
-		<section>
-
-
+</div>
 
 			<div>
 				<h2>Border Radius</h2>
@@ -187,74 +255,8 @@ header {
 	</code></pre>
 			</div>
 
-			<div>
-				<h2>RGBA</h2>
-				  <p>Controls the opacity of a color</p>
-		      <p>Color property using (red, green, blue, opacity) </p>
-					<p>opacity is a decimal value from 0 to 1
-			<ul>
-			<li>0 - not visible</li>
-			<li>1 - fully visible</li>
-		</ul>
-	<pre><code>
-.example {
-    <span class="code-content">background:</span>   rgba(255, 0, 0, 0.8);
-}
 
-	</code></pre>
 
-			</div>
-			<div>
-				<h2>Opacity</h2>
-				  <p>Controls the opacity of an element</p>
-					<p>opacity is a decimal value from 0 to 1
-			<ul>
-			<li>0 - not visible</li>
-			<li>1 - fully visible</li>
-		</ul>
-	<pre><code>
-.example {
-    <span class="code-content">opacity:</span>   0.8;
-}
-
-	</code></pre>
-
-			</div>
-					<div>
-						<h2>Text-shadow</h2>
-						  <p>Add a drop shadow to a text element to make it stand out against its background.
-					<ul>
-					<li>The first value is the X-coordinate</li>
-<li>Second value is the Y-coordinate</li>
-<li>Third value is the blur radius </li>
-<li>Fourth value is the color of the shadow</li>
-				</ul>
-	<pre><code>
-h1 {
-    <span class="code-content"> text-shadow: </span> 2px 2px 10px red;
-}
-
-	</code></pre>
-
-					</div>
-					<div>
-						<h2>Box-shadow</h2>
-						  <p>Adds a drop shadow to an element
-					<ul>
-					<li>The first value is the offset-x</li>
-<li>Second value is the offset-y</li>
-<li>Third value is the blur </li>
-<li>Fourth value is the spread </li>
-<li>Fifth value is the color of the shadow</li>
-				</ul>
-	<pre><code>
-h1 {
-    <span class="code-content"> box-shadow: </span>  0 0 5px 5px red;
-}
-
-	</code></pre>
-
-					</div>
 		</section>
 
 	</body>
