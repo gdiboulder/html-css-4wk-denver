@@ -1,0 +1,262 @@
+ <!doctype html>
+<html>
+
+	<head>
+		<title>Intermediate CSS!</title>
+		<link rel='stylesheet' href='css/styles.css' type='text/css' media='all' />
+
+	</head>
+
+	<body id="beginners-class4">
+		<h1>Intermediate CSS - The fun parts!</h2>
+
+		<section>
+			<div>
+				<h2>Background Image</h2>
+				<ul style="margin-top:0;">
+					<li>Apply a background image to a div or section.</li>
+				</ul>
+				<h3 style="margin:0;  ">Most Elements:</h3>
+				<pre><code>
+header {
+    <span class="code-content">background-image:</span> url('PATH/TO/IMAGE');
+}
+
+				</code></pre>
+
+			</div>
+			<div>
+				<h2>Background Position</h2>
+<p>Allows you to move a background image (or gradient) around within its container.</p>
+<p>It has three different types of values:</P>
+			<ul style="margin-top:0;">
+				<li>Length values (e.g. 100px 5px)</li>
+				<li>Percentages (e.g. 100% 5%)</li>
+				<li>Keywords (e.g. top right</li>
+
+				</ul>
+
+				<pre><code>
+header {
+    <span class="code-content">background-position:</span> 100px 5px;
+}
+
+				</code></pre>
+
+			</div>
+
+			<div>
+				<h2>Background size</h2>
+<p>Allows you to resize the background inside its container.</p>
+<h3 style="margin:0;  ">Cover</h3>
+<p>Tells the browser to make sure the image always covers the entire container, even if it has to stretch the image or cut a little bit off one of the edges. </p>
+				<pre><code>
+header {
+    <span class="code-content">background-size:</span> cover;
+}
+
+				</code></pre>
+
+<h3 style="margin:0;  ">Contain</h3>
+<p>Tells the browser to always show the whole image, even if that leaves a little space to the sides or bottom.</p>
+				<pre><code>
+header {
+    <span class="code-content">background-size:</span> contain;
+}
+
+				</code></pre>
+
+
+			<h3 style="margin:0;  ">One Value</h3>
+			<p>If you only provide one value (e.g. background-size: 400px) it counts for the width, and the height is set to auto. You can use any CSS size units you like, including pixels, percentages, ems, viewport units, etc.</p>
+				<pre><code>
+header {
+    <span class="code-content">background-size:</span> 400px;
+}
+
+				</code></pre>
+
+			<h3 style="margin:0;  ">Two Values</h3>
+			<p>If you provide two values, the first sets the background image's width and the second sets the height. Like the single value syntax, you can use whatever measurement units you like.</p>
+				<pre><code>
+header {
+    <span class="code-content">background-size:</span> 400px 100px;
+}
+
+				</code></pre>
+						</div>
+<div>
+	<h2>Linear Gradients</h2>
+	<p>Creates an image consisting of a progressive transition between two or more colors along a straight line. </p>
+	<h3 style="margin:0;  ">Top to bottom</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-linear-gradient(red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;  ">Right to left</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-linear-gradient(right, red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;  ">Using Degrees</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-linear-gradient(45deg, red, orange);
+}
+
+	</code></pre>
+
+			</div>
+<div>
+	<h2>Radial Gradients</h2>
+	<p>Creates an image consisting of a progressive transition between two or more color in a radius. </p>
+	<h3 style="margin:0;  ">Center</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(circle cover, red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;  ">Top Left</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 0, circle, red, orange);
+}
+
+	</code></pre>
+	<h3 style="margin:0;">Middle Left</h3>
+	<pre><code>
+header {
+     <span class="code-content">background-image:</span>  -webkit-radial-gradient(0 50%, circle, red, orange);
+}
+
+	</code></pre>
+			</div>
+		</section>
+
+		<section>
+
+
+
+			<div>
+				<h2>Border Radius</h2>
+				  <p>Give any element "rounded corners" by applying a border-radius through CSS.</p>
+		      <p>You'll only notice if there is a color change involved. For instance, if the element has a background-color or border that is different than the element it's over. </p>
+	<pre><code>
+.example {
+    <span class="code-content">border-radius:</span>  10px;
+    <span class="code-content">background:</span>   #BADA55;
+}
+
+	</code></pre>
+		<h3 style="margin:0;">Two Values</h3>
+		<p>10px radius on top left & bottom right</p>
+
+<p>40px on top right & bottom left</p>
+	<pre><code>
+.example {
+   <span class="code-content">border-radius:</span> 10px 40px;
+   <span class="code-content">background:</span>   #BADA55;
+}
+
+	</code></pre>
+		<h3 style="margin:0;">Four Values</h3>
+		<p>10px radius on top left</p>
+	<p>25px radius top right</p>
+	<p>50px radius bottom right</p>
+	<p>100px radius bottom left</p>
+	<pre><code>
+.example {
+   <span class="code-content">border-radius:</span> 10px 40px;
+   <span class="code-content">background:</span>   #BADA55;
+}
+
+	</code></pre>
+			<h3 style="margin:0;">Make Circles from Squares</h3>
+			<p>50% radius on all corners of a container or image that is a square</p>
+	<pre><code>
+.example {
+   <span class="code-content">border-radius:</span> 50%;
+   <span class="code-content">background:</span>   #BADA55;
+}
+
+	</code></pre>
+			</div>
+
+			<div>
+				<h2>RGBA</h2>
+				  <p>Controls the opacity of a color</p>
+		      <p>Color property using (red, green, blue, opacity) </p>
+					<p>opacity is a decimal value from 0 to 1
+			<ul>
+			<li>0 - not visible</li>
+			<li>1 - fully visible</li>
+		</ul>
+	<pre><code>
+.example {
+    <span class="code-content">background:</span>   rgba(255, 0, 0, 0.8);
+}
+
+	</code></pre>
+
+			</div>
+			<div>
+				<h2>Opacity</h2>
+				  <p>Controls the opacity of an element</p>
+					<p>opacity is a decimal value from 0 to 1
+			<ul>
+			<li>0 - not visible</li>
+			<li>1 - fully visible</li>
+		</ul>
+	<pre><code>
+.example {
+    <span class="code-content">opacity:</span>   0.8;
+}
+
+	</code></pre>
+
+			</div>
+					<div>
+						<h2>Text-shadow</h2>
+						  <p>Add a drop shadow to a text element to make it stand out against its background.
+					<ul>
+					<li>The first value is the X-coordinate</li>
+<li>Second value is the Y-coordinate</li>
+<li>Third value is the blur radius </li>
+<li>Fourth value is the color of the shadow</li>
+				</ul>
+	<pre><code>
+h1 {
+    <span class="code-content"> text-shadow: </span> 2px 2px 10px red;
+}
+
+	</code></pre>
+
+					</div>
+					<div>
+						<h2>Box-shadow</h2>
+						  <p>Adds a drop shadow to an element
+					<ul>
+					<li>The first value is the offset-x</li>
+<li>Second value is the offset-y</li>
+<li>Third value is the blur </li>
+<li>Fourth value is the spread </li>
+<li>Fifth value is the color of the shadow</li>
+				</ul>
+	<pre><code>
+h1 {
+    <span class="code-content"> box-shadow: </span>  0 0 5px 5px red;
+}
+
+	</code></pre>
+
+					</div>
+		</section>
+
+	</body>
+
+</html>
